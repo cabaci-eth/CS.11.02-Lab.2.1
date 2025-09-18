@@ -9,29 +9,37 @@
 public class Main {
 
     public static void main(String[] args) {
-        // 1. add (int a, int b)
-        System.out.println(String.valueOf(add(3, 8)));
+         // 1. add (int a, int b)
+        int addResult = add(3, 8);
+        System.out.println(addResult);
 
         // 2. add (int a, int b, int c, int d)
-        System.out.println(String.valueOf(add(3, 8, 4, 9)));
+        int addTwoResult = add(3, 8, 4, 9);
+        System.out.println(addTwoResult);
 
         // 3. morningGreeting (String name)
-        System.out.println(String.valueOf(morningGreeting("Miguel Wang")));
+        String morningGreetingResult = morningGreeting("Miguel Wang");
+        System.out.println(morningGreetingResult);
 
         // 4. afternonGreeting (String name)
-        System.out.println(String.valueOf(afternoonGreeting("Miguel Wang")));
+        String afternoonGreetingResult = afternoonGreeting("Miguel Wang");
+        System.out.println(afternoonGreetingResult);
 
         // 5. triple (Stirng string)
-        System.out.println(String.valueOf(triple("oohbaby")));
+        String tripleResult = triple("oohbaby");
+        System.out.println(tripleResult);
 
         // 6. half (int integer)
-        System.out.println(String.valueOf(half(17)));
+        double halfResult = half(17);
+        System.out.println(halfResult);
 
         // 7. roundPositiveValueToNearestInteger
-        System.out.println(String.valueOf(roundPositiveValueToNearestInteger(8.5)));
+        int roundPositiveValueToNearestIntegerResult = roundPositiveValueToNearestInteger(8.5);
+        System.out.println(roundPositiveValueToNearestIntegerResult);
 
-        // 8. roundPositiveValueToNearestInteger
-        System.out.println(String.valueOf(roundNegativeValueToNearestInteger(-8.5)));
+        // 8. roundNegativeValueToNearestInteger
+        int roundNegativeValueToNearestIntegerResult = roundNegativeValueToNearestInteger(-8.5);
+        System.out.println(roundNegativeValueToNearestIntegerResult);
     }
 
     // 1. add
@@ -62,7 +70,7 @@ public class Main {
 
     // 6. half
     public static double half(int integer){
-        return (float)integer/2;
+        return (double)integer/2;
     }
 
     // 7. roundPositiveValueToNearestInteger
